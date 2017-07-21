@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html ng-app="header">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>ARDS Maintenance</title>
+
+    <link rel="shortcut icon" href="../favicon.ico">
+
+    <link type="text/css" rel="stylesheet" href="../dhis-web-core-resource/material-design-icons/material-icons.css">
+    <link type="text/css" rel="stylesheet" href="../dhis-web-core-resource/fonts/roboto-v15.css">
+    <link type="text/css" rel="stylesheet" href="../dhis-web-commons/font-awesome/css/font-awesome.min.css"/>
+    <link type="text/css" rel="stylesheet" href="../dhis-web-commons/material-design-icons/material-icons.css"/>
+    <link type="text/css" rel="stylesheet" href="../dhis-web-commons/fonts/roboto.css"/>
+    <link href="../dhis-web-commons/bootstrap3/css/bootstrap-theme.css" rel="stylesheet">
+    <link href="../dhis-web-commons/fontawesome4/css/font-awesome.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet"  href="../dhis-web-commons/bootstrap/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" media="screen" href="../dhis-web-commons/javascripts/jQuery/ui/css/redmond/jquery-ui.css" />
+
+    <script type="text/javascript" src="../dhis-web-commons/javascripts/jQuery/jquery.min.js"></script>
+
+
+    <script type="text/javascript" src="../dhis-web-commons/bootstrap/js/bootstrap.min.js"></script>
+    <link type="text/css" rel="stylesheet"  href="../dhis-web-commons/bootstrap/css/bootstrap.min.css">
+    <script type="text/javascript" src="../dhis-web-commons/javascripts/angular/angular.js"></script>
+    <script type="text/javascript" src="../dhis-web-commons/javascripts/angular/angular-resource.js"></script>
+    <script type="text/javascript" src="../dhis-web-commons/javascripts/angular/angular-route.js"></script>
+    <script type="text/javascript" src="../dhis-web-commons/javascripts/angular/angular-cookies.js"></script>
+    <script type="text/javascript" src="../dhis-web-commons/javascripts/angular/angular-animate.js"></script>
+    <script type="text/javascript" src="../dhis-web-commons/javascripts/angular/angular-sanitize.js"></script>
+    <script type="text/javascript" src="../dhis-web-commons/javascripts/angular/angular-messages.js"></script>
+    <script type="text/javascript" src="../dhis-web-commons/javascripts/angular/ui-bootstrap.js"></script>
+    <script type="text/javascript" src="../dhis-web-commons/javascripts/dhis2/dhis2.translate.js"></script>
+    <script type="text/javascript" src="../dhis-web-commons/javascripts/dhis2/dhis2.menu.js"></script>
+    <script type="text/javascript" src="../dhis-web-commons/javascripts/dhis2/dhis2.menu.ui.js"></script>
+    <link type="text/css" rel="stylesheet" href="../dhis-web-commons/font-awesome/css/font-awesome.min.css"/>
+
+    <link type="text/css" rel="stylesheet" media="screen" href="../dhis-web-commons/css/widgets.css"/>
+    <link type="text/css" rel="stylesheet" media="screen" href="../dhis-web-commons/css/menu.css">
+    <link type="text/css" rel="stylesheet" media="print" href="../dhis-web-commons/css/print.css">
+    <link type="text/css" rel="stylesheet" href="../dhis-web-commons/javascripts/angular/plugins/select.css">
+    <link type="text/css" rel="stylesheet" href="../dhis-web-commons/javascripts/angular/plugins/select2.css">
+
+    <style type="text/css">
+        body {
+            margin: 0;
+        }
+
+        .multi-select select{
+            display: block;
+        }
+        .d2-input {
+            width: 100%;
+            padding-bottom: 1rem;
+        }
+        .label{
+            color: #000 !important;
+        }
+
+
+        nav .caret {
+            border-top-color: #fff !important;
+            border-bottom-color: #fff !important;
+        }
+
+        .left-bar {
+            margin-top: 100px !important;
+        }
+        .content-area {
+            padding-top: 105px !important;
+        }
+        .navbar-inverse .navbar-brand {
+            color: #ffffff;
+        }
+        .navbar-inverse .navbar-nav > li > a {
+            color: #ffffff;
+        }
+    </style>
+    <script>
+        angular.module('header', ['ngResource','ngCookies',
+            'd2HeaderBar']);
+
+    </script>
+</head>
+<body>
+<d2-header-bar></d2-header-bar>
+<div id="app" class="app"></div>
+
+<%= htmlWebpackPlugin.options.vendorScripts %>
+<%= htmlWebpackPlugin.options.serviceWorkerScript %>
+</body>
+</html>
